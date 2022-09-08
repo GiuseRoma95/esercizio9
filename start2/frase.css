@@ -1,3 +1,49 @@
+main {height: 10vh;
+width: 26vw;
+border: 2px solid rgb(87, 87, 87);
+display: flex;
+align-items: center;
+margin:20px;
+padding-left: 10px;}
+
+p {font-family: 'Bree Serif', serif;
+    font-weight: bold;
+}
+
+span i {color: rgb(3, 146, 146);
+}
+
+@keyframes parole { from {opacity: 1;}
+                    50% {opacity: 0.5;}
+                    to {opacity: 0;}
+}
+
+@keyframes parole2 { from {opacity: 0;}
+                    50% {opacity: 0.5;}
+                    to {opacity: 1;}
+}
+.web {
+    animation-name: parole;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+.page {position: relative;
+    right: 105px;
+    animation-name: parole2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 10s ;
+    animation-iteration-count: infinite;}
+
+.app {position: relative;
+    right: 200px;
+    animation-name: parole2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 3s ;
+    animation-iteration-count: infinite;}
 /*
 1 creazione del testo e formattazione di 1 parola da far ruotare
 2 inserimento delle altre 2 parole
